@@ -34,17 +34,9 @@ class TimerActor extends Actor {
                     case "rock"     => "グー"
                     case "scissors" => "チョキ"
                   }
-                  val inputStream = imageName match {
-                    case "paper" =>
-                      ChamaFaceRockPaperScissors.getClass.getClassLoader
-                        .getResourceAsStream("paper.png")
-                    case "rock" =>
-                      ChamaFaceRockPaperScissors.getClass.getClassLoader
-                        .getResourceAsStream("rock.png")
-                    case "scissors" =>
-                      ChamaFaceRockPaperScissors.getClass.getClassLoader
-                        .getResourceAsStream("scissors.png")
-                  }
+                  val inputStream =
+                    ChamaFaceRockPaperScissors.getClass.getClassLoader
+                      .getResourceAsStream(s"${imageName}.png")
                   val win = imageName match {
                     case "paper"    => "チョキ"
                     case "rock"     => "パー"
