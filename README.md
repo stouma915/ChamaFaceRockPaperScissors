@@ -1,5 +1,6 @@
 # ChamaFaceRockPaperScissors
 ちゃま顔じゃんけん
+※本人の許可を得て公開しています。
 
 ## 画像作成者・謝らないといけない人
 - 画像作成者: [chorocra](https://twitter.com/chorocra)さん
